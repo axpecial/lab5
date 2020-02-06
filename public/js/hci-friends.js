@@ -14,6 +14,7 @@ function initializePage() {
 }
 
 function handleNameClick(e) {
+	// Prevent page from reloading when name is clicked
 	e.preventDefault();
 	var name = $(this).text();
 	var newName = anagrammedName(name);
