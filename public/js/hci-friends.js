@@ -5,8 +5,8 @@ $(document).ready(function() {
 	initializePage();
 })
 
-function handleNameClick() {
-	// event.preventDefault();
+function handleNameClick(e) {
+	e.preventDefault();
 	var name = $(this).text();
 	var anagrammedName = anagrammedName(name);
 	console.log(name + " -> " + anagrammedName);
